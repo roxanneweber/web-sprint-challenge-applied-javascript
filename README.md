@@ -10,10 +10,10 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [X] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [X] Open the assignment in Canvas and click on the "Set up git" option.
+- [X] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
+- [X] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -27,11 +27,11 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Instructions
 
-- [ ] Navigate to the root of the project with your command line.
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file.
-- [ ] Run `npm start` to compile the project and serve it.
-- [ ] Navigate Chrome to `http://localhost:3000`
-- [ ] In a separate terminal, run `npm test` to run tests.
+- [X] Navigate to the root of the project with your command line.
+- [X] Run `npm install` to download the dependencies listed in the `package.json` file.
+- [X] Run `npm start` to compile the project and serve it.
+- [X] Navigate Chrome to `http://localhost:3000`
+- [X] In a separate terminal, run `npm test` to run tests.
 
 **Steps Required for MVP:**
 
@@ -50,17 +50,22 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes to the *main* branch.
+- [X] Submit via Codegrade by committing and pushing any new changes to the *main* branch.
 - [ ] Check Codegrade for automated feedback.
 - [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [X] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+    The DOM are all the elements that can be created/accessed/edited within the browser that we can then manipulate to create our pages
 2. What is an event?
+    An event is anything that the user does to interact with their browser, such as clicking on something, scrolling their mouse wheel or using the scroll bar to move the page up or down, or even resizing the browser.
 3. What is an event listener?
+    We use event listeners in javascript to watch for events that happen on the page. This helps us to create interactive (versus static) pages, such as mouseover menu items that change color, drop-down hamburger menus, clicking a link to take the user somewhere else, etc.
 4. Why would we convert a NodeList into an Array?
+    Nodelists cannot be manipulated by events, so we much create our own array first and use this array variable to access individual key/value pairs.
 5. What is a component?
+    A component is a build inside our javascript code that allows us to create our interactivity. For instance we might build a component that will create an HTML framework that shows up on a page. Then we can create another component that can "fill" several of the frameworks we created with data from a created or API array of objects.
