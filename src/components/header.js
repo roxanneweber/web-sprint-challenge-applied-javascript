@@ -1,8 +1,5 @@
 
-const headContainer = document.querySelector('.header-container');
-const Header = (title, date, temp) => {
-
-  // TASK 1
+// TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
   // The tags used, the hierarchy of elements and their attributes must match the provided markup exactly!
@@ -15,8 +12,14 @@ const Header = (title, date, temp) => {
   //  </div>
   //
 
- 
-  //* instantiating the elements
+
+
+
+const headerContainer = document.querySelector('.header-container');
+
+const Header = (title, date, temp) => {
+
+  //* create web elements
   const header = document.createElement('div'); // child1
   const headerDate = document.createElement('span'); // child2
   const headerTitle = document.createElement('h1'); // child2
@@ -34,11 +37,14 @@ const Header = (title, date, temp) => {
   header.appendChild(headerTemp);
   
   //* telling it to put the variables above into our elements
-  headerTitle.textContent = 'Lambda Times';
-  headerDate.textContent = 'October 29, 2021'; 
-  headerTemp.textContent = '45&#176';
+  headerTitle.textContent = title;
+  headerDate.textContent = date; 
+  headerTemp.textContent = temp;
 
+  return header;
 }
+
+Header('Lambda Times', 'October 29', 'damn cold');
 
 const headerAppender = (selector) => {
   // TASK 2
@@ -47,9 +53,11 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
-
+  const headerElem = document.querySelector(selector);
+  headerElem.appendChild(headerContainer);
 
 }
-  //return headerAppender;
+headerAppender('.header-container');
+
 
 export { Header, headerAppender }

@@ -7,8 +7,8 @@ axios.get(`http://localhost:5000/api/articles`)
   const data = resp.data.articles.technology[0]
   console.log(resp.data.articles.technology)
 
-  const corral = Card(data)
-  cards.appendChild(corral)
+  //const corral = Card(data)
+  //cards.appendChild(corral)
 })
 .catch(error => {
   console.error(error);
