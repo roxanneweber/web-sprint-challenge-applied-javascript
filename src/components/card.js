@@ -5,12 +5,10 @@ import axios from "axios";
 axios.get(`http://localhost:5000/api/articles`)
 .then(resp => {
   const data = resp.data.articles.technology[0]
-  console.log(resp.data.articles.technology[0])
+  console.log(resp.data.articles.technology)
 
-
-
-  // const dionne = cardMaker(data)
-  // cards.appendChild(dionne)
+  const corral = Card(data)
+  cards.appendChild(corral)
 })
 .catch(error => {
   console.error(error);
